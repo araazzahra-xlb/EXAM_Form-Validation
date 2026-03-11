@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registration</title>
+
+    <style>
+      body {
+        margin: 20px 40px;
+      }
+
+      p {
+        margin-bottom: 14px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      #summary {
+        white-space: pre-line;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Registration</h1>
+    <hr />
+
+    <form id="RegistForm">
+      <p>
+        <label for="fullName">Full Name </label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Enter your full name"
+        />
+      </p>
+
+      <p>
+        <label for="birthDate">Date of Birth </label>
+        <input type="date" id="birthDate" name="birthDate" />
+      </p>
+
+      <p>
+        <label for="Gender">Gender </label>
+        <input type="radio" name="Gender" value="Male" /> Male
+        <input type="radio" name="Gender" value="Female" /> Female
+      </p>
+
+      <p>
+        <label for="religion">Religion</label>
+        <select id="religion" name="religion">
+          <option value="">-- Select Religion --</option>
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Katolik">Katolik</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Buddha">Buddha</option>
+          <option value="Konghucu">Konghucu</option>
+        </select>
+      </p>
+
+      <div>
+        <label for="hdyk">How did you know about le petite? </label>
+        <div>
+          <input type="checkbox" name="hdyk" value="Brochure" /> Brochure
+        </div>
+        <div><input type="checkbox" name="hdyk" value="Banner" /> Banner</div>
+        <div><input type="checkbox" name="hdyk" value="Website" /> Website</div>
+        <div><input type="checkbox" name="hdyk" value="Friend" /> Friend</div>
+      </div>
+
+      <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </p>
+    </form>
+
+    <div id="message"></div>
+    <div id="summary"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
